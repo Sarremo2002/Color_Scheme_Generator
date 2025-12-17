@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <!-- Controls -->
+    <form id="color-form">
+      <!-- Seed color -->
+      <input type="color" id="seed-color" name="seed-color" value="#f55a5a" />
+
+      <!-- Color scheme mode -->
+      <select id="scheme-mode" name="scheme-mode">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome Dark</option>
+        <option value="monochrome-light">Monochrome Light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="triad">Triad</option>
+        <option value="quad">Quad</option>
+      </select>
+
+      <!-- Submit -->
+      <button type="submit">Get color scheme</button>
+    </form>
+
+    <!-- Color scheme output -->
+    <section id="color-scheme">
+      <!-- Each color column will be injected here by JS -->
+      <!-- Example structure per color: -->
+      <!--
+        <div class="color-column">
+            <div class="color-box"></div>
+            <p class="hex-value">#FFFFFF</p>
+        </div>
+        -->
+    </section>
+  </body>
+</html>
